@@ -25,6 +25,15 @@ if (numberOfToppings > 10) {
 for (i = 2; i <= 10; i += 2) {
     console.log(i);
 }
+
+// alternately:
+for (let i = 1; i <= numberOfToppings; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+//it is only logging the increments where the remainder is zero (an even number)
+
 // An example of the output you want for in this assignment is:
 
 // The House of Pizza string 8 number At The House of Pizza, we have 8 toppings. Quality, not quantity.
