@@ -15,5 +15,3 @@ function checkDrivingAge() {
     console.log(false);
   }
 }
-
-console.log(checkDrivingAge);
