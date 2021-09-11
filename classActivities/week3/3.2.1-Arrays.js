@@ -21,6 +21,7 @@ for (let sequence of arrayFibbonici) {
   console.log(sequence);
 }
 // instantiates new variable (sequence) which loops over the array using 'of' keyword
+// which is why it needs a let (it changes)
 // will print the entire sequence of the array
 
 console.log("");
