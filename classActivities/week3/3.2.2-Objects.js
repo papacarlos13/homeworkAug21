@@ -11,6 +11,17 @@
 //me[a];//the const is set to the key "age" so will print 38
 //me["a"]; //undefined because looking for string "a"
 
+// bracket and dot notation
+const key = "1";
+const obj = {
+  key: console.log("the key is 'key'"),
+  1: console.log("the key is 1")
+};
+// what will the following lines print?
+obj[key]; // there is no variable "key in the object"
+obj.key; // accesses the key of "key"
+obj["key"] // same
+
 // create an object with at least four properties, each with a different data type
 // name one of the four properties "collection" and set its value to an Array or Object
 
