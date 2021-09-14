@@ -1,0 +1,32 @@
+body {
+    margin: 40px;
+}
+header {
+    padding: 15px;
+    background-color: #d2b48c;
+}
+img {
+  float: left;
+  margin-left: 15px;
+}
+h1, h2 {
+  font-weight: 700;
+  text-align: right;
+  color: #a0522d;
+  margin-right: 20px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 24px;
+}
+nav {
+  position: relative; left: 15px;
+}
+main p {
+  text-align: center;
+}
+footer {
+    text-align: right;
+}
