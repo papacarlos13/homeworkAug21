@@ -1,0 +1,48 @@
+body {
+    background-color: mediumspringgreen;
+  }
+header, footer {
+    background-color: darkturquoise;
+}
+header {
+    padding: 25px 20px 10px 20px;
+    font-family: "Georgia";
+}
+header h1 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 800;
+}
+header p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+.main-content {
+    position: relative; left: 40px;
+    font-family: "Trebuchet MS";
+}
+.main-content h2 {
+    font-size: 30px;
+}
+.main-content li {
+    font-size: 18px;
+    }
+#Arch {
+    float:left;
+    position: relative; top: 15px; left: 15px;
+    max-height: 340px;
+    max-width: 340px;
+}
+#ice-cream {
+    float: right;
+    position: relative; right: 100px;
+    max-width: 320px;
+    max-height: 320px;
+}
+a:hover {
+    background: skyblue;
+}
+footer {
+    text-align: right;
+}

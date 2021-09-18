@@ -17,7 +17,7 @@ const greet = name => `Hello, ${name}`;
 //   return `Hello, ${name}, good ${timeOfDay}`;
 // };
 
-const timeOfDayGreet = (name, timeOfDay) => `Hello, ${name}, good ${timeOfDay}`
+const timeOfDayGreet = (name, timeOfDay) => `Hello, ${name}, good ${timeOfDay}`;
 //2 parameters need parenthesis
 
 // function tripleAndHalf(num) {

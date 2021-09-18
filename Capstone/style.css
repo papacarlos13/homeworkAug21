@@ -1,13 +1,12 @@
-body {
-    margin: 40px;
-}
 header {
-    padding: 15px;
-    background-color: #d2b48c;
+  padding: 15px;
+  background-color: #d2b48c;
 }
-img {
+#logo-img {
   float: left;
   margin-left: 15px;
+  width: 150px;
+  height: 150px;
 }
 h1, h2 {
   font-weight: 700;
@@ -24,9 +23,14 @@ h2 {
 nav {
   position: relative; left: 15px;
 }
+nav,
+main,
+footer {
+  background-color: beige;
+}
 main p {
   text-align: center;
 }
 footer {
-    text-align: right;
+  text-align: right;
 }
