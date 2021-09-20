@@ -20,26 +20,22 @@
    </header>
    <nav>
        <a href="index.html">Home</a> |
-       <a href="monday.html">Plan</a> |
+       <a href="">Plan</a> |
        <a href="contact.html">Contact</a>
    </nav>
    <div class="tagline">
        <p>"Let's plan for 6 more days of spring!"</p>
    </div>
    <main>
-        <div class="main-content">
-            <label for="day-select"><em>What's the forecast for:</em></label>
-            <select name="day" id="day-select" onchange="location = this.value;">
-                <option value=""> --Please choose a day-- </option>
-                <option value="monday.html">Monday</option>
-                <option value="tues">Tuesday</option>
-                <option value="wed">Wednesday</option>
-                <option value="thur">Thursday</option>
-                <option value="fri">Friday</option>
-                <option value="sat">Saturday</option>
-                <option value="sun">Sunday</option>
-            </select>
-        </div>
+    <div class="contact-content">
+      <div class="question">
+        <p>How can the Groundhog help forecast your business better?</p>
+      </div>
+      <div class="contact-field">
+        <textarea id="query-request" rows="10" cols="120" placeholder="Please provide your name, contact email, and a brief description of the problem you would like the Groundhog to help you solve."></textarea>
+        <input type="button" value="Send">
+      </div>
+    </div>
    </main>
    <footer>
     <hr>
