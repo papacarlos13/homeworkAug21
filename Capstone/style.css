@@ -55,7 +55,12 @@ nav {
 footer {
   text-align: right;
 }
+a:visited {
+  color: blue;
+}
 /* start contact page css */
-.contact-content {
-  position: relative; left: 50px;
+.question {
+  /* position: relative; left: 50px; */
+  display: flex;
+  justify-content: center;
 }

@@ -47,9 +47,10 @@ header p {
 a:hover {
     background: skyblue;
 }
-/* a:visited {
-    color: blueviolet;
-} */
+a:visited {
+    color: blue;
+}
+/* I hate it when visited links turn purple lol */
 footer p {
     font-size: 12px;
 }
