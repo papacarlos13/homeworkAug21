@@ -1,4 +1,7 @@
-// https://jsonplaceholder.typicode.com/todos
+// Using the placeholder To-Do data at https://jsonplaceholder.typicode.com/todos :
+// create a list of user 9's to-dos
+// then find the number of user 9's incomplete tasks
+// (code is at bottom of page)
 
 const data = [
   {
@@ -1211,15 +1214,17 @@ const data = [
     completed: false
   }
 ];
+// create a list of user 9's to-dos
+const user9todos = data.filter(element => element.userId === 9);
+console.log(user9todos);
 
-// filter the to-dos for incomplete tasks
-const incompleteTasks = data.filter(tasks => tasks.completed < 1);
-console.log(incompleteTasks);
-//<1 since false is zero
+// then find the number of user 9's incomplete tasks
+const user9incomplete = user9todos.filter(element => element.completed < 1);
+console.log(user9incomplete);
 
-// filter for user 6's tasks (userID 6)
-// const user6tasks = data.filter(user => user.userID === 6);
-// console.log(user6tasks);
-// filter for tasks with a title less than 15 characters long
-// const shortTitles = data.filter(task => task.title.length < 15);
-// console.log(shortTitles);
+// wasn't sure if they were looking for the total number of incomplete tasks of user 9, but just in case: (I had to count all the userIds in the list of 9's incompletes, because counting the "completed" values would be the same as counting 0+0+0+0...)
+let totalIncomplete = user9incomplete.reduce(
+  (total, task) => total + task.userId / 9,
+  0
+);
+console.log(totalIncomplete);
