@@ -1,0 +1,69 @@
+html {
+    background-color: antiquewhite;
+  }
+  
+  body {
+    text-align: center;
+    font-size: 18px;
+    margin: 2px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  div {
+    border: 2px solid burlywood;
+    margin: 10px;
+    padding: 1em;
+  }
+  
+  #top {
+    padding: 1em 0em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+  }
+
+  #introPic {
+     width: 325px;
+    max-height: 225px;
+  }
+  
+  #bio {
+    
+    max-width: 249px;
+    text-align: left;
+  }
+  #bio > li {
+    padding: 4px;
+  }
+
+  #princessBride {
+    max-width: 325px;
+    height: 225px;
+  }
+  #stuff {
+      display: block;
+  }
+  #pro {
+    width: auto;
+  }
+  #achievements {
+    list-style-position: inside;
+  }
+
+@media (max-width: 375px) {
+    img {
+        max-width: 325px;
+    }
+    #achievements {
+        text-align: left;
+    }
+}

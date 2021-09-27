@@ -715,10 +715,10 @@ const data = [
 ];
 // create a list of user 5's posts
 const user5posts = data.filter(element => element.userId === 5);
-console.log(user5posts);
+// console.log(user5posts);
 
-// then, create a list of title and body pairs
-let userPairs = data.map(element => {
+// then, create a list of user 5's title and body pairs
+let userPairs = user5posts.map(element => {
   return `title: ${element.title},
   body: ${element.body}`;
 });
