@@ -1219,12 +1219,24 @@ const user9todos = data.filter(element => element.userId === 9);
 console.log(user9todos);
 
 // then find the number of user 9's incomplete tasks
-const user9incomplete = user9todos.filter(element => element.completed < 1);
+const user9incomplete = user9todos.filter(element => element.completed < 1)
+  .length;
 console.log(user9incomplete);
 
-// wasn't sure if they were looking for the total number of incomplete tasks of user 9, but just in case: (I had to count all the userIds in the list of 9's incompletes, because counting the "completed" values would be the same as counting 0+0+0+0...)
-let totalIncomplete = user9incomplete.reduce(
-  (total, task) => total + task.userId / 9,
-  0
-);
-console.log(totalIncomplete);
+//or instead of .length at the end of line 1222, for line 1223 console.log(user9incomplete.length);
+
+// my wacky solution using .reduce
+// let totalIncomplete = user9incomplete.reduce(
+//   (total, task) => total + task.userId / 9,
+//   0
+// );
+// console.log(totalIncomplete);
+
+// //correct solution usuing .reduce
+// const user9incomplete = user9todos.reduce((acc, curr) => {
+//   if (!curr.completed) {
+//     return acc + 1;
+//   }
+//   return acc;
+// }, 0);
+// console.log(user9incomplete);
